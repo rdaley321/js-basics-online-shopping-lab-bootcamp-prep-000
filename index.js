@@ -21,8 +21,8 @@ function viewCart() {
   }
   let message = "In your cart, you have ";
   if(cart.length === 1) {
+    console.log('HEY IM IM IN HERE!!!')
     message =+ `${cart[0].itemName} at $${cart[0].itemPrice}.`;
-    console.log(`${message} HERE IS THE MESSAGE`)
     return message;
   }
   for(let i=0; i<cart.length;i++) {
