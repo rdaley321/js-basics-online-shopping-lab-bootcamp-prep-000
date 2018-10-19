@@ -20,9 +20,8 @@ function viewCart() {
     return "Your shopping cart is empty.";
   }
   let message = "In your cart, you have ";
-  console.log('HEY IM IM IN HERE!!!')
   if(cart.length === 1) {
-    message =+ `${cart[0].itemName} at $${cart[0].itemPrice}.`;
+    message += `${cart[0].itemName} at $${cart[0].itemPrice}.`;
     return message;
   }
   for(let i=0; i<cart.length;i++) {
